@@ -1,11 +1,19 @@
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{ site.description }}">
-
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ylivieskan Kivimiehet</title>
+  <meta name="author" content="Mauno Vähä">
+  <meta name="description" content="Ylivieskan Kivimiehet - Pihalaatoituksen ammattilaiset.">
+  <link rel="stylesheet" href="{{ "/assets/3rd-party/css/pure-min.css" }}">
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="{{ "/assets/3rd-party/css/grids-responsive-old-ie-min.css" }}">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="{{ "/assets/3rd-party/css/grids-responsive-min.css" }}">
+  <!--<![endif]-->
+  <link rel="stylesheet" href="{{ "/css/main.css" }}">
+  <!--[if lte IE 8]>
+  <script src="{{ "/assets/3rd-party/javascripts/html5shiv.min.js" }} "></script>
+  <script src="{{ "/assets/3rd-party/javascripts/respond.min.js" }} "></script>
+  <![endif]-->
 </head>
