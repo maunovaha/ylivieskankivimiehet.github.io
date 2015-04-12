@@ -8,6 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ylivieskankivimiehet.fi" # the base hostname & protocol for your site
 
+
 # Build settings
 markdown: kramdown
 encoding: "utf-8"
