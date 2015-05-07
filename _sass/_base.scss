@@ -202,6 +202,17 @@ header .content {
   margin-left: -15px;
 }
 
+.content-showcase {
+  padding: 0px 15px;
+}
+
+@media(min-width:768px) {
+  .content-showcase {
+    padding: 0px 160px;
+    text-align: center;
+  }
+}
+
 section {
   padding: 100px 0;
 
@@ -221,6 +232,10 @@ section {
 
   h2, p {
     color: #fff;
+  }
+
+  p:first-child {
+    margin-top: 0px;
   }
 }
 
@@ -270,7 +285,10 @@ section {
 
 #about {
   background-color: #25aae1;
-  color: #fff;
+  
+  h2, p {
+    color: #fff;
+  }
 
   h2 {
     margin-bottom: 30px;
