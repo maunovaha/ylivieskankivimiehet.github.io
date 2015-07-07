@@ -9,11 +9,17 @@ header {
     width: 100%;
     position: absolute;
     bottom: 0px;
+    padding: 0px $content-padding;
 
     .logo-area, .description {
     	margin: 0 auto;
-      max-width: $description-max-width;
+      max-width: $section-description-max-width;
       color: $brown;
+    }
+
+    .logo-area img {
+      max-width: 100%;
+      height: auto;
     }
 
     .logo-area img, .arrow {

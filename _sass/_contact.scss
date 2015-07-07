@@ -1,8 +1,38 @@
 section.contact {
+  .form-wrapper {
+    margin: 0 auto 80px auto;
+    max-width: $section-description-max-width;
+    padding: 0px $content-padding;
+
+    a {
+      text-decoration: none;
+      color: $gray;
+      border: 1px solid $light-gray;
+      padding: 16px 0px 16px 0px;
+      text-align: center;
+      font-size: 20px;
+      line-height: 30px;
+      -moz-transition: border-color .2s ease-in, color .2s ease-in;
+      -o-transition: border-color .2s ease-in, color .2s ease-in;
+      -webkit-transition: border-color .2s ease-in, color .2s ease-in;
+      transition: border-color .2s ease-in, color .2s ease-in;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+      outline: 0;
+      text-decoration: none;
+      border-color: $brown;
+      color: $brown;
+    }
+  }
+
+  /*
   .content-half {
     min-height: $section-height / 2;
     min-height: 50vh;
-    /* overflow: hidden; */
+    /* overflow: hidden;
 
     .description, .form-wrapper {
       margin: 0 auto;
@@ -20,4 +50,5 @@ section.contact {
     .form-wrapper {
     }
   }
+  */
 }

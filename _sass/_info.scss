@@ -1,11 +1,12 @@
 section.info {
+  /*
   .content-half {
     min-height: $section-height / 2;
     height: 50vh;
-    /* overflow: hidden; */
+    /* overflow: hidden; 
 
     .description {
-      max-width: $description-max-width;
+      max-width: $section-description-max-width;
       margin: 0 auto;
       min-height: inherit;
       height: inherit;
@@ -15,4 +16,5 @@ section.info {
       }
     }
   }
+  */
 }

@@ -1,14 +1,24 @@
 footer {
   margin-top: 120px;
-  border-top: 9px solid $brown;
+  border-top: 12px solid $brown;
   text-align: center;
+  padding: 0px $content-padding;
 
   p {
     margin: 0px;
+    padding: 80px 0px 30px 0px;
+    color: $brown;
   }
 
-  p.showcase {
-    padding: 80px 0px 80px 0px;
+  p.copyright {
+    padding: 0px;
+    line-height: 24px;
+    padding-bottom: 10px;
+    
+    small {
+      color: $gray;
+      font-size: 14px;
+    }
   }
 
   /*
