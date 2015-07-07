@@ -1,0 +1,23 @@
+section.contact {
+  .content-half {
+    min-height: $section-height / 2;
+    min-height: 50vh;
+    /* overflow: hidden; */
+
+    .description, .form-wrapper {
+      margin: 0 auto;
+      max-width: $description-max-width;
+    }
+
+    .description {
+      min-height: inherit;
+
+      .table-cell {
+        text-align: center;
+      }
+    }
+
+    .form-wrapper {
+    }
+  }
+}

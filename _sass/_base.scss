@@ -1,19 +1,43 @@
 /* Variables */
-$font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$dark-gray: #2c3e50;
 
-/* Base styles */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+/* Fonts */
+
+$font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/* Colors */
+
+$gray:        #7C7C7C;
+$light-gray:  #CBCBCB;
+$medium-gray: #B0B0B0;
+$brown:       #2D2B26;
+$light-brown: #ECEADD;
+
+/* Sizes */
+
+$description-max-width: 640px;
+$section-height:        660px;
+
+* { 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
 }
 
-body {
-  line-height: 1.4;
-  color: $dark-gray;
+body { 
+  line-height: 1.7em; 
+  font-size: 16px; 
+  color: $gray;
+}
+
+/*
+When setting the primary font stack, apply it to the Pure grid units along
+with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use
+specific font stacks to ensure the greatest OS/browser compatibility.
+*/
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  /* Set your content font stack here: */
   font-family: $font-stack;
-  font-size: 20px;
 }
 
 h1,
@@ -22,14 +46,101 @@ h3,
 h4,
 h5,
 h6 {
-  /* text-transform: uppercase; */
-  font-weight: 600;
-  letter-spacing: 0.7px;
+  line-height: normal;
+  font-family: $font-stack;
+  color: $brown;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 26px;
+  line-height: 46px;
+  margin: 36px 0px;
+}
+
+input, textarea {
+  padding: 10px 0px 10px 16px;
+  color: $brown;
+  margin: 0px 0px 26px 0px;
+  font-size: 20px;
+  line-height: 30px;
+  border: none;
+  background-color: none;
+}
+
+input {
+  border-bottom: 1px solid $light-gray;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+  border: 1px solid $light-gray;
+  margin: 16px 0px 0px 0px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 1px solid $brown;
+}
+
+textarea:focus {
+  border-color: $brown;
+}
+
+::-webkit-input-placeholder {
+  color: $medium-gray;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: $medium-gray;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: $medium-gray;
+}
+
+:-ms-input-placeholder {  
+  color: $medium-gray;
 }
 
 a {
   text-decoration: none;
-  color: $dark-gray;
+  color: $brown;
+  border: 1px solid $light-gray;
+  border-top: none;
+  padding: 16px 0px 16px 0px;
+  /* border-radius: 4px; */
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 a:hover,
@@ -39,15 +150,27 @@ a:active {
   text-decoration: underline;
 }
 
-html, body, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {
-  font-family: $font-stack;
+/* Helpers */
+
+.table {
+  display: table;
+  width: 100%;
+  /* table-layout: fixed; */
+
+  .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 
-.clearfix:after {
-  content: " "; /* Older browser do not support empty content */
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
+.ruler-light, .ruler-heavy {
+  background-color: $brown;
+}
+
+.ruler-light {
+  height: 3px;
+}
+
+.ruler-heavy {
+  height: 9px;
 }

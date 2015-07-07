@@ -1,0 +1,37 @@
+header {
+  position: relative;
+  left: 0;
+  background-color: $light-brown;
+  min-height: $section-height;
+  height: 100vh;
+
+  .content {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+
+    .logo-area, .description {
+    	margin: 0 auto;
+      max-width: $description-max-width;
+      color: $brown;
+    }
+
+    .logo-area img, .arrow {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .arrow {
+      cursor: pointer;
+      margin-bottom: 36px;
+    }
+
+    .description {
+      text-align: center;
+
+      p {
+        font-style: italic;
+      }
+    }
+  }
+}

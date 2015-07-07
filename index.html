@@ -2,63 +2,92 @@
 layout: default
 ---
 
-<!-- Navigation -->
-<!--
-  <nav role="navigation"></nav>
-
-  Visible only after scrolled down,
-  has has the logo and center and links
-  at both of the sides..
--->
-
 <!-- Header -->
-<header>
-  <!-- Figure will have abstract 2D background -->
-  <!-- 
-    Could be a city of some sort... or 
-    the bottom of logo will make laattakuvio
-  -->
-  <figure>
-    <img src="../assets/images/logo2.png" class="pure-img" alt="Ylivieskan Kivimiehet Logo" />
-  </figure>
-
-  <div class="description">
-  <!--
-    <h1 style="margin-top: 30px; text-transform: uppercase; margin-bottom: 0px;">- Kivenkovaa pihalaatoitusta -</h1>
-    <p style="margin-top: 10px;">( Quisque ligula eros ullamcorper quis. )</p>
-  -->
-  </div>
-  <!--
-    <div class="content">
-      <div class="content-wrapper pure-g">
-        <div class="pure-u-1">
-          <img src="/assets/images/logo3.png" class="pure-img" />
-          <div class="header-info">
-            <h1>Ylivieskan Kivimiehet</h1>
-            <span>Quisque ligula eros ullamcorper quis.</span>
-          </div>
-        </div>
-      </div>
+<header role="banner">
+  <div class="content">
+    <div class="logo-area">
+      <img src="../assets/images/logo2.png" width="360" alt="Ylivieskan kivimiehet logo" />
     </div>
-  -->
+    <div class="description">
+      <p>
+        Lorem ipsum dolor sit amet, consectet adipiscing elit. Sed posuere interdum sem.
+      </p>
+    </div>
+    <img src="http://placehold.it/46x46" class="arrow" alt="Nuoli alas" />
+  </div>
 </header>
 
 <!-- Main content -->
 <main role="main">
-  <section class="introduction">
+  <!-- Section info -->
   <!--
-    <h1 style="margin-top: 30px; text-transform: uppercase; margin-bottom: 0px; color: #fff; margin: 0px;">TIETOJA</h1>
-  -->
+  <section class="info">
+    <div class="content-half">
+      <div class="ruler-heavy"></div>
+      <div class="description table">
+        <div class="table-cell">
+          <h1>Tietoja</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectet adipiscing elit. Sed posuere interdum sem.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="content-half pure-g" style="background: black;">
+      <div class="pure-u-1 pure-u-md-1-3">
+        <img src="../assets/images/laatat_1.jpg" class="pure-img" alt="Pihalaatoitus kuva 1" />
+      </div>
+      <div class="pure-u-1 pure-u-md-1-3">
+        <img src="../assets/images/laatat_1.jpg" class="pure-img" alt="Pihalaatoitus kuva 2" />
+      </div>
+      <div class="pure-u-1 pure-u-md-1-3">
+        <img src="../assets/images/laatat_1.jpg" class="pure-img" alt="Pihalaatoitus kuva 3" />
+      </div>
+    </div>
   </section>
-  <!-- 
-  will contain images which looks old, and when
-  they are hovered, normal colors appears.
-  -->
-  <section class="references"></section>
-  <section class="contact">
+-->
 
+  <!-- Section contact -->
+  <section class="contact">
+    <div class="content-half">
+      <div class="ruler-light"></div>
+      <div class="description table">
+        <div class="table-cell">
+          <h1>Yhteydenotto</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectet adipiscing elit. Sed posuere interdum sem.
+          </p>
+          <!--
+          <p style="font-size: 18px;">
+            ( P.S. Täytäthän kaikki kentät. )
+          </p>
+        -->
+        </div>
+      </div>
+      <!-- <p>Lähetys epäonnistui tai onnistui .. syötäthän kaikkie tiedot.</p> -->
+      <div class="form-wrapper pure-g">
+        <form action="http://localhost/random" method="post" novalidate>
+          <input type="text" placeholder="Nimi" id="name" class="pure-u-1" />
+          <input type="tel" placeholder="Puhelinnumero" id="phone" class="pure-u-1" />
+          <input type="email" placeholder="Sähköposti" id="email" class="pure-u-1" />
+          <!--
+          <textarea placeholder="Viesti" class="pure-u-1"></textarea>
+          <a href="#" class="pure-u-1">Lähetä viesti</a>
+          -->
+        </form>
+      </div>
+    </div>
   </section>
 </main>
 
 <!-- Footer -->
-<footer role="contentinfo"></footer>
+<!--
+<footer role="contentinfo">
+  <p class="showcase">Löydät meidät myös facebookista.</p>
+  <p>
+    <small>
+      Copyright &copy; Ylivieskan kivimiehet - 2015 ja siitä eteenpäin. Sivujen toteutus &raquo; Mauno Vähä
+    </small>
+  </p>
+</footer>
+-->
