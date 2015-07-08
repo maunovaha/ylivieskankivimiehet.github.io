@@ -1,14 +1,8 @@
 header {
-  position: relative;
-  left: 0;
   background-color: $light-brown;
-  min-height: $section-height;
   height: 100vh;
 
   .content {
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
     padding: 0px $content-padding;
 
     .logo-area, .description {
@@ -18,18 +12,20 @@ header {
     }
 
     .logo-area img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .logo-area img, .arrow {
       display: block;
       margin: 0 auto;
     }
 
-    .arrow {
-      cursor: pointer;
-      margin-bottom: 36px;
+    .logo-area img {
+      margin-top: 56px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    p.arrow {
+      margin: 0px 0px 56px 0px;
+      font-size: 34px;
+      text-align: center;
     }
 
     .description {
@@ -37,6 +33,7 @@ header {
 
       p {
         font-style: italic;
+        margin: 56px 0px;
       }
     }
   }

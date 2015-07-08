@@ -3,22 +3,25 @@ layout: default
 ---
 
 <!-- Header -->
-<header role="banner">
-  <div class="content">
+<header role="banner" class="table">
+  <div class="content table-cell">
     <div class="logo-area">
-      <img src="../assets/images/logo2.png" width="360" alt="Ylivieskan kivimiehet logo" />
+      <img src="../assets/images/logo2.png" width="440" alt="Ylivieskan kivimiehet logo" />
     </div>
     <div class="description">
       <p>
         Lorem ipsum dolor sit amet, consectet adipiscing elit. Sed posuere interdum sem.
       </p>
     </div>
-    <img src="http://placehold.it/46x46" class="arrow" alt="Nuoli alas" />
+    <p class="arrow">
+      <a href="#"><i class="fa fa-chevron-down"></i></a>
+    </p>
   </div>
 </header>
 
 <!-- Main content -->
 <main role="main">
+
   <!-- Section info -->
   <section class="info">
     <div class="ruler-heavy"></div>
@@ -60,7 +63,7 @@ layout: default
         <input type="tel" placeholder="Puhelinnumero" id="phone" class="pure-u-1" />
         <input type="email" placeholder="Sähköposti" id="email" class="pure-u-1" />
         <textarea placeholder="Viesti" class="pure-u-1"></textarea>
-        <a href="#" class="pure-u-1">Lähetä viesti</a>
+        <a href="#" class="pure-u-1"><i class="fa fa-paper-plane"></i>Lähetä viesti</a>
       </form>
     </div>
   </section>
@@ -68,10 +71,11 @@ layout: default
 
 <!-- Footer -->
 <footer role="contentinfo">
-  <p>Löydät meidät myös facebookista.</p>
+  <img src="../assets/images/logo2.png" width="220" alt="Ylivieskan kivimiehet logo" />
+  <p>P.S. Löydät meidät myös <a href="#" class="underline">facebookista</a>.</p>
   <p class="copyright">
     <small>
-      Copyright &copy; Ylivieskan kivimiehet - 2015 ja siitä eteenpäin. Sivujen toteutus &raquo; <a href="http://twitter.com/maunovaha" target="_blank">Mauno Vähä</a>
+      Copyright <i class="fa fa-copyright"></i> Ylivieskan kivimiehet - 2015 ja siitä eteenpäin. Sivujen toteutus <a href="http://twitter.com/maunovaha" target="_blank"><i class="fa fa-share"></i>Mauno Vähä</a>
     </small>
   </p>
 </footer>

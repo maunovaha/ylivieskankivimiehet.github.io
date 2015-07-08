@@ -1,12 +1,19 @@
 footer {
-  margin-top: 120px;
-  border-top: 12px solid $brown;
+  margin-top: 240px;
+  border-top: 6px solid $brown;
+  border-bottom: 12px solid $brown;
   text-align: center;
   padding: 0px $content-padding;
+  background-color: $light-brown;
+
+  img {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
 
   p {
     margin: 0px;
-    padding: 80px 0px 30px 0px;
+    padding: 0px 0px 40px 0px;
     color: $brown;
   }
 
@@ -18,13 +25,15 @@ footer {
     small {
       color: $gray;
       font-size: 14px;
+
+      a {
+        color: $gray;
+
+        i.fa-share {
+          margin-right: 3px;
+          margin-left: 2px;
+        }
+      }
     }
   }
-
-  /*
-  p {
-    color: $brown;
-    font-size: 16px;
-  }
-  */
 }
