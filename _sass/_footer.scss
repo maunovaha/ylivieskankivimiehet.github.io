@@ -2,19 +2,27 @@ footer {
   margin-top: 240px;
   border-top: 6px solid $brown;
   border-bottom: 12px solid $brown;
-  text-align: center;
+  
   padding: 0px $content-padding;
   background-color: $light-brown;
 
   img {
-    margin-top: 40px;
-    margin-bottom: 10px;
+    padding-top: 40px;
+    padding-bottom: 22px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
   }
 
   p {
     margin: 0px;
     padding: 0px 0px 40px 0px;
     color: $brown;
+  }
+
+  p.copyright, p.showcase {
+    text-align: center;
   }
 
   p.copyright {
@@ -28,6 +36,7 @@ footer {
 
       a {
         color: $gray;
+        text-decoration: none;
 
         i.fa-share {
           margin-right: 3px;

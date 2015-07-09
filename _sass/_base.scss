@@ -95,6 +95,7 @@ input, textarea {
 
 input, textarea {
   -moz-transition: border-color .2s ease-in;
+  -ms-transition: border-color .2s ease-in;
   -o-transition: border-color .2s ease-in;
   -webkit-transition: border-color .2s ease-in;
   transition: border-color .2s ease-in;
