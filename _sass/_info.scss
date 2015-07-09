@@ -21,7 +21,6 @@ section.info {
       width: 100%; 
       height: 100%;
       -moz-transition: opacity .3s ease;
-      -ms-transition: opacity .3s ease;
       -o-transition: opacity .3s ease;
       -webkit-transition: opacity .3s ease;
       transition: opacity .3s ease;
@@ -45,7 +44,6 @@ section.info {
 
     .pure-img {
       -moz-transition: all .5s ease;
-      -ms-transition: all .5s ease;
       -o-transition: all .5s ease;
       -webkit-transition: all .5s ease;
       transition: all .5s ease;
@@ -58,28 +56,8 @@ section.info {
     &:hover .img-wrapper .pure-img {
       -webkit-transform: scale(1.25); 
       -moz-transform: scale(1.25); 
-      -ms-transform: scale(1.25);
       -o-transform:  scale(1.25); 
       transform: scale(1.25);
     }
   }
-
-  /*
-  .content-half {
-    min-height: $section-height / 2;
-    height: 50vh;
-    /* overflow: hidden; 
-
-    .description {
-      max-width: $section-description-max-width;
-      margin: 0 auto;
-      min-height: inherit;
-      height: inherit;
-
-      .table-cell {
-        text-align: center;
-      }
-    }
-  }
-  */
 }
