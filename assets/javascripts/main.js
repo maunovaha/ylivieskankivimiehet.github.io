@@ -88,16 +88,12 @@ Main.prototype = {
   windowScroll: function() {
     var self = this;
 
-    // Do nothing if element not visible
-    // e.g. Means that window is smaller than desktop and nav is not visible
-    // if () { return; }
-
-    // Using small delay to activate nav classes.. it doesn't need to be real-time, 
-    // and therefore, this is better considering performance.
+    // Do nothing if nav is not visible
+    // e.g. Means that window is smaller than defined media query for its visibility
     //
-    // Also, handling that we don't bind multiple nav checks... we only want to know 
-    // when we have moved, and then check the state of scroll position.
-    if(!this.windowScrollTimer) {
+    // Thus, uses small delay to activate nav classes.. it doesn't need to be real-time, 
+    // and therefore, this is better considering performance.
+    if(!this.windowScrollTimer && window.innerWidth >= 930) {
       this.windowScrollTimer = setTimeout(function() {
         self.updateNav();
       }, 900);
