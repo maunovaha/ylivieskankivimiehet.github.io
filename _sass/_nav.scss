@@ -1,0 +1,34 @@
+nav {
+  position: fixed;
+  z-index: 3;
+  right: 30px;
+  top: 30px;
+
+  ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    
+    li {
+      a {
+        text-decoration: none;
+        width: 12px;
+        height: 12px;
+        border-radius: 6px;
+        border: 1px solid $gray;
+        display: block;
+        margin-bottom: 12px;
+      }
+
+      a:hover {
+        background-color: $medium-gray;
+      }
+
+      a.active,
+      a.active:hover {
+        border-color: $brown;
+        background-color: $brown;
+      }
+    }
+  }
+}

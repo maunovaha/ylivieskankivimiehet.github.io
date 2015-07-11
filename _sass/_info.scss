@@ -38,26 +38,32 @@ section.info {
       }
     }
 
+    /*
     .img-wrapper {
       overflow: hidden;
     }
+    */
 
+    /*
     .pure-img {
       -moz-transition: all .5s ease;
       -o-transition: all .5s ease;
       -webkit-transition: all .5s ease;
       transition: all .5s ease;
     }
+    */
 
     &:hover .zoom-overlay {
       opacity: 1;
     }
 
+    /*
     &:hover .img-wrapper .pure-img {
       -webkit-transform: scale(1.25); 
       -moz-transform: scale(1.25); 
       -o-transform:  scale(1.25); 
       transform: scale(1.25);
     }
+    */
   }
 }

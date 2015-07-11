@@ -7,8 +7,8 @@ $font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
 /* Colors */
 
 $gray:        #7C7C7C;
-$light-gray:  #CBCBCB;
-$medium-gray: #B0B0B0;
+$light-gray:  #EDEDED;
+$medium-gray: #BBBBBB;
 $brown:       #2D2B26;
 $light-brown: #ECEADD;
 
@@ -90,7 +90,7 @@ input, textarea {
   line-height: 30px;
   background-color: none;
   border: none;
-  border-bottom: 1px solid #EDEDED;
+  border-bottom: 1px solid $light-gray;
 }
 
 input, textarea {
@@ -111,19 +111,19 @@ textarea:focus {
 }
 
 ::-webkit-input-placeholder {
-  color: #BBBBBB;
+  color: $medium-gray;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-  color: $light-gray;
+  color: $medium-gray;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-  color: $light-gray;
+  color: $medium-gray;
 }
 
 :-ms-input-placeholder {  
-  color: $light-gray;
+  color: $medium-gray;
 }
 
 a {
