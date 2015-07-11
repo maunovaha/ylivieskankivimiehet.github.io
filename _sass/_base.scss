@@ -14,7 +14,7 @@ $light-brown: #ECEADD;
 
 /* Sizes */
 
-$section-description-max-width: 640px;
+$section-description-max-width: 680px;
 $section-height:                660px;
 $content-padding:               20px;
 
@@ -77,8 +77,8 @@ h6 {
 }
 
 p {
-  font-size: 26px;
-  line-height: 46px;
+  font-size: 24px;
+  line-height: 44px;
   margin: 36px 0px;
 }
 
@@ -94,10 +94,10 @@ input, textarea {
 }
 
 input, textarea {
-  -moz-transition: border-color .2s ease-in;
-  -o-transition: border-color .2s ease-in;
-  -webkit-transition: border-color .2s ease-in;
-  transition: border-color .2s ease-in;
+  -moz-transition: border-color .3s;
+  -o-transition: border-color .3s;
+  -webkit-transition: border-color .3s;
+  transition: border-color .3s;
 }
 
 textarea {
@@ -108,6 +108,7 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
+  border-color: $brown;
 }
 
 ::-webkit-input-placeholder {

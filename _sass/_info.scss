@@ -1,4 +1,8 @@
 section.info {
+  
+  .section-description {
+    max-width: 980px;
+  }
 
   .pure-g {
     background-color: $brown;
@@ -20,10 +24,10 @@ section.info {
       z-index: 2;
       width: 100%; 
       height: 100%;
-      -moz-transition: opacity .3s ease;
-      -o-transition: opacity .3s ease;
-      -webkit-transition: opacity .3s ease;
-      transition: opacity .3s ease;
+      -moz-transition: opacity .3s;
+      -o-transition: opacity .3s;
+      -webkit-transition: opacity .3s;
+      transition: opacity .3s;
 
       .zoom-btn-aligner {
         position: absolute;
@@ -65,5 +69,16 @@ section.info {
       transform: scale(1.25);
     }
     */
+  }
+}
+
+/* Media queries */
+
+/* Custom */
+@media screen and (min-width: 35.5em) and (max-width: 64em) {
+  section.info .img-link .zoom-overlay .zoom-btn-aligner {
+    height: 40px;
+    margin-top: -20px;
+    font-size: 40px;
   }
 }

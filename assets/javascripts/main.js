@@ -2,11 +2,68 @@
 
 /***********************************************************************
  * 
- * Gallery section
+ * Image overlay
  * 
  **********************************************************************/
-var ImageGallery = function() {};
-ImageGallery.prototype = {
+var ImageOverlay = function() {
+  this.init();
+};
+ImageOverlay.prototype = {
+  /**
+   * Initializes everything
+   */
+  init: function() {
+    var self = this;
+
+    // Handle to overlay etc.
+    this.$overlay    = $('.overlay');
+    this.$overlayImg = $('#overlay-img');
+
+    // Binds clicks for opening overlay
+    $('.img-link').on('click', function(e) {
+      self.open(e, this);
+    });
+
+    // Binds click for closing overlay
+    $('.overlay-close').on('click', function(e) {
+      self.close(e);
+    });
+  },
+
+  /**
+   * Opens overlay
+   */
+  open: function(e, that) {
+    e.preventDefault();
+
+    // Disables scrollbars from body while image is open
+    $('body').addClass('overflow-hidden');
+
+    var self = this;
+
+    // Handle to proper image element & url of it
+    var $target = $('#' + $(that).data('img-id')),
+        imgUrl  = $target.attr('src');
+
+    // Swaps overlay to display proper image
+    self.$overlayImg.attr('src', imgUrl);
+
+    // Shows it all
+    self.$overlay.addClass('overlay-open'); 
+  },
+
+  /**
+   * Closes overlay
+   */
+  close: function(e) {
+    e.preventDefault();
+
+    // Enables scrollbars from body
+    $('body').removeClass('overflow-hidden');
+
+    // Hide it all
+    this.$overlay.removeClass('overlay-open');
+  }
 };
 
 /***********************************************************************
@@ -24,7 +81,7 @@ ContactForm.prototype = {
  * 
  **********************************************************************/
 var Main = function() {
-  this.imageGallery = new ImageGallery();
+  this.imageOverlay = new ImageOverlay();
   this.contactForm  = new ContactForm();
 
   // Handle to nav

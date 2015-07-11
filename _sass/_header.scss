@@ -7,7 +7,7 @@ header {
 
     .logo-area, .description {
     	margin: 0 auto;
-      max-width: $section-description-max-width;
+      max-width: 680px;
       color: $brown;
     }
 
@@ -36,10 +36,10 @@ header {
       }
 
       a.animate-bounce {
-        -webkit-animation: bounce 1s ease 3s 2;
-        -moz-animation: bounce 1s ease 3s 2;
-        -o-animation: bounce 1s ease 3s 2;
-        animation: bounce 1s ease 3s 2;
+        -webkit-animation: bounce .8s ease 2s 2;
+        -moz-animation: bounce .8s ease 2s 2;
+        -o-animation: bounce .8s ease 2s 2;
+        animation: bounce .8s ease 2s 2;
       }
     }
 
@@ -49,6 +49,8 @@ header {
       p {
         /* font-style: italic; */
         margin: 56px 0px;
+        font-size: 36px;
+        line-height: 52px;
       }
     }
   }
