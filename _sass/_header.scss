@@ -11,8 +11,13 @@ header {
       color: $brown;
     }
 
+    .logo-area {
+      max-width: 440px;
+    }
+
     .logo-area img {
       padding-top: 56px;
+      width: 100%;
       max-width: 100%;
       display: block;
       margin: 0 auto;

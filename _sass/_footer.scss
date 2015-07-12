@@ -6,9 +6,15 @@ footer {
   padding: 0px $content-padding;
   background-color: $light-brown;
 
-  img {
+  .logo-area {
+    margin: 0 auto;
+    max-width: 220px;
+  }
+
+  .logo-area img {
     padding-top: 40px;
     padding-bottom: 27px;
+    width: 100%;
     max-width: 100%;
     display: block;
     margin: 0 auto;
