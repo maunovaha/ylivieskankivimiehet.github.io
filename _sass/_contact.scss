@@ -1,8 +1,12 @@
 section.contact {
-  .form-wrapper {
+  form {
     margin: 0 auto 80px auto;
     max-width: $section-description-max-width;
     padding: 0px $content-padding;
+
+    input, textarea {
+      margin: 0px 0px 26px 0px;
+    }
 
     a {
       text-decoration: none;

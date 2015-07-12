@@ -99,15 +99,13 @@ layout: default
         Kiinnostuitko? Hyvä! Ota yhteyttä täyttämällä oheinen lomake, tai soita 0400 123 123.
       </p>
     </div>
-    <div class="form-wrapper pure-g">
-      <form action="http://localhost/random" method="post" novalidate>
-        <input type="text" placeholder="Nimesi" id="name" class="pure-u-1" />
-        <input type="tel" placeholder="Puhelinnumero" id="phone" class="pure-u-1" />
-        <input type="email" placeholder="Sähköposti" id="email" class="pure-u-1" />
-        <textarea placeholder="Viesti" class="pure-u-1"></textarea>
-        <a href="#" class="pure-u-1"><i class="fa fa-paper-plane"></i>Lähetä viesti</a>
-      </form>
-    </div>
+    <form action="http://localhost/random" class="pure-g" method="post" novalidate>
+      <input type="text" placeholder="Nimesi" id="name" class="pure-u-1" maxlength="255" />
+      <input type="tel" placeholder="Puhelinnumero" id="phone" class="pure-u-1" maxlength="255" />
+      <input type="email" placeholder="Sähköposti" id="email" class="pure-u-1" maxlength="255" />
+      <textarea placeholder="Viesti" class="pure-u-1" maxlength="5000"></textarea>
+      <a href="#" class="pure-u-1"><i class="fa fa-paper-plane"></i>Lähetä viesti</a>
+    </form>
   </section>
 </main>
 

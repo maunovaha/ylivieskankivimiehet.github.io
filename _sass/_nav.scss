@@ -26,7 +26,7 @@
 }
 
 nav {
-  display: none;
+  display: none !important;
 
   position: fixed;
   z-index: 3;
@@ -72,6 +72,6 @@ nav {
 @media only screen and (min-width: 930px) {
 
   .quick-fb-link, nav {
-    display: block;
+    display: block !important;
   }
 }
