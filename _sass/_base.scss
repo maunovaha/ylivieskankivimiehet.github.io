@@ -82,48 +82,55 @@ p {
   margin: 36px 0px;
 }
 
-input, textarea {
-  padding: 16px;
-  color: $gray;
-  font-size: 22px;
-  line-height: 30px;
-  background-color: none;
-  border: none;
-  border-bottom: 1px solid $light-gray;
-}
+form {
+  input, 
+  textarea {
+    padding: 16px;
+    color: $gray;
+    font-size: 22px;
+    line-height: 30px;
+    background-color: none;
+    border: none;
+    border-bottom: 1px solid $light-gray;
+  }
 
-input, textarea {
-  -moz-transition: border-color .3s;
-  -o-transition: border-color .3s;
-  -webkit-transition: border-color .3s;
-  transition: border-color .3s;
-}
+  input, textarea {
+    -moz-transition: border-color .3s;
+    -o-transition: border-color .3s;
+    -webkit-transition: border-color .3s;
+    transition: border-color .3s;
+  }
 
-textarea {
-  resize: none;
-  height: 120px;
-}
+  textarea {
+    resize: none;
+    height: 120px;
+  }
 
-input:focus,
-textarea:focus {
-  outline: none;
-  border-color: $brown;
-}
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: $brown;
+  }
 
-::-webkit-input-placeholder {
-  color: $medium-gray;
-}
+  .placeholder {
+    color: $medium-gray;
+  }
 
-:-moz-placeholder { /* Firefox 18- */
-  color: $medium-gray;
-}
+  ::-webkit-input-placeholder {
+    color: $medium-gray;
+  }
 
-::-moz-placeholder {  /* Firefox 19+ */
-  color: $medium-gray;
-}
+  :-moz-placeholder { /* Firefox 18- */
+    color: $medium-gray;
+  }
 
-:-ms-input-placeholder {  
-  color: $medium-gray;
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: $medium-gray;
+  }
+
+  :-ms-input-placeholder {  
+    color: $medium-gray;
+  }
 }
 
 a {
