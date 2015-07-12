@@ -134,8 +134,8 @@ Main.prototype = {
 
     var $target = $('#' + $(this).data('scroll-to'));
 
-    $('body').stop().animate({
-      'scrollTop': $target.offset().top
+    $('body, html').animate({
+      scrollTop: $target.offset().top
     }, 900, 'easeInOutQuart', function() {});
   },
 
@@ -150,7 +150,7 @@ Main.prototype = {
     //
     // Thus, uses small delay to activate nav classes.. it doesn't need to be real-time, 
     // and therefore, this is better considering performance.
-    if(!this.windowScrollTimer && window.innerWidth >= 930) {
+    if(!this.windowScrollTimer && this.innerWidth() >= 1120) {
       this.windowScrollTimer = setTimeout(function() {
         self.updateNav();
       }, 900);
@@ -161,6 +161,7 @@ Main.prototype = {
    * Updates navigation classes
    */
   updateNav: function() {
+
     // Find out which section we are at
     var $sectionLink = this.currentSection();
 
@@ -183,7 +184,7 @@ Main.prototype = {
    * Returns currently viewed section link based on scroll position
    */
   currentSection: function() {
-    var scrollY = window.scrollY,
+    var scrollY = this.scrollY(),
         section = 'contact';
 
     if (scrollY < this.$sections['header'].height() - this.sectionOffset) {
@@ -193,6 +194,24 @@ Main.prototype = {
     }
 
     return $('#nav-section-' + section);
+  },
+
+  /** 
+   * Cross-browser scrollY position, IE's can eat my shorts.
+   */
+  scrollY: function() {
+    var supportPageOffset = window.pageXOffset !== undefined,
+        isCSS1Compat      = ((document.compatMode || "") === "CSS1Compat");
+
+    return supportPageOffset ? window.pageYOffset : isCSS1Compat ? 
+           document.documentElement.scrollTop : document.body.scrollTop;
+  },
+
+  /** 
+   * Cross-browser innerWidth, IE 8, I hate you.
+   */
+  innerWidth: function() {
+    return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
   }
 };
 

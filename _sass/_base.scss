@@ -16,7 +16,7 @@ $light-brown: #ECEADD;
 
 $section-description-max-width: 680px;
 $section-height:                660px;
-$content-padding:               20px;
+$content-padding:               35px;
 
 * { 
   -webkit-box-sizing: border-box; 
@@ -142,7 +142,6 @@ a:active {
   padding: 0px $content-padding;
   margin: 80px auto 80px auto;
   max-width: $section-description-max-width;
-  text-align: center;
 }
 
 .table {
@@ -166,4 +165,12 @@ a:active {
 
 .ruler-heavy {
   height: 12px;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 35.5em) {
+  .section-description {
+    text-align: center;
+  }
 }
