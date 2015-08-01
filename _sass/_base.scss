@@ -1,0 +1,183 @@
+/* Variables */
+
+/* Fonts */
+
+$font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/* Colors */
+
+$gray:        #7C7C7C;
+$light-gray:  #EDEDED;
+$medium-gray: #BBBBBB;
+$brown:       #2D2B26;
+$light-brown: #ECEADD;
+
+/* Sizes */
+
+$section-description-max-width: 680px;
+$section-height:                660px;
+$content-padding:               35px;
+
+* { 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
+
+body { 
+  line-height: 1.7em; 
+  font-size: 16px; 
+  color: $gray;
+}
+
+/*
+When setting the primary font stack, apply it to the Pure grid units along
+with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use
+specific font stacks to ensure the greatest OS/browser compatibility.
+*/
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  /* Set your content font stack here: */
+  font-family: $font-stack;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: normal;
+  font-family: $font-stack;
+  color: $brown;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 24px;
+  line-height: 44px;
+  margin: 36px 0px;
+}
+
+form {
+  input, 
+  textarea {
+    padding: 16px;
+    color: $gray;
+    font-size: 22px;
+    line-height: 30px;
+    background-color: none;
+    border: none;
+    border-bottom: 1px solid $light-gray;
+  }
+
+  input, textarea {
+    -moz-transition: border-color .3s;
+    -o-transition: border-color .3s;
+    -webkit-transition: border-color .3s;
+    transition: border-color .3s;
+  }
+
+  textarea {
+    resize: none;
+    height: 120px;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: $brown;
+  }
+
+  .placeholder {
+    color: $medium-gray;
+  }
+
+  ::-webkit-input-placeholder {
+    color: $medium-gray;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    color: $medium-gray;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: $medium-gray;
+  }
+
+  :-ms-input-placeholder {  
+    color: $medium-gray;
+  }
+}
+
+a {
+  color: $brown;
+}
+
+a:hover,
+a:focus,
+a:active {
+  outline: 0;
+}
+
+/* Helpers */
+
+.section-description {
+  padding: 0px $content-padding;
+  margin: 80px auto 80px auto;
+  max-width: $section-description-max-width;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  /* table-layout: fixed; */
+
+  .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.ruler-light, .ruler-heavy {
+  background-color: $brown;
+}
+
+.ruler-light {
+  height: 6px;
+}
+
+.ruler-heavy {
+  height: 12px;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 35.5em) {
+  .section-description {
+    text-align: center;
+  }
+}

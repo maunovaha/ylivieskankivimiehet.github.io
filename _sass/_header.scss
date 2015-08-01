@@ -1,0 +1,78 @@
+header {
+  background-color: $light-brown;
+  height: 100vh;
+
+  .content {
+    padding: 0px $content-padding;
+
+    .logo-area, .description {
+    	margin: 0 auto;
+      max-width: 680px;
+      color: $brown;
+    }
+
+    .logo-area {
+      max-width: 440px;
+    }
+
+    .logo-area img {
+      padding-top: 56px;
+      width: 100%;
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+      height: auto;
+    }
+
+    p.arrow {
+      padding: 0px 0px 56px 0px;
+      font-size: 34px;
+      position: relative;
+      left: 0px;
+      top: 0px;
+
+      a {
+        padding: 20px;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        margin-left: -37px;
+        display: block;
+      }
+
+      a.animate-bounce {
+        -webkit-animation: bounce .8s ease 2s 2;
+        -moz-animation: bounce .8s ease 2s 2;
+        -o-animation: bounce .8s ease 2s 2;
+        animation: bounce .8s ease 2s 2;
+      }
+    }
+
+    .description {
+      text-align: center;
+
+      p {
+        /* font-style: italic; */
+        margin: 56px 0px;
+        font-size: 36px;
+        line-height: 52px;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes bounce {
+ 30% { -webkit-transform: translateY(20px); }
+}
+
+@-moz-keyframes bounce {
+ 30% { -moz-transform: translateY(20px); }
+}
+
+@-o-keyframes bounce {
+ 30% { -o-transform: translateY(20px); }
+}
+
+@keyframes bounce {
+ 30% { transform: translateY(20px); }
+}

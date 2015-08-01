@@ -1,0 +1,57 @@
+footer {
+  margin-top: 240px;
+  border-top: 6px solid $brown;
+  border-bottom: 12px solid $brown;
+  
+  padding: 0px $content-padding;
+  background-color: $light-brown;
+
+  .logo-area {
+    margin: 0 auto;
+    max-width: 220px;
+  }
+
+  .logo-area img {
+    padding-top: 40px;
+    padding-bottom: 27px;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  p {
+    margin: 0px;
+    padding: 0px 0px 40px 0px;
+    color: $brown;
+  }
+
+  p.showcase {
+    font-size: 28px;
+  }
+
+  p.copyright, p.showcase {
+    text-align: center;
+  }
+
+  p.copyright {
+    padding: 0px;
+    line-height: 24px;
+    padding-bottom: 10px;
+    
+    small {
+      color: $gray;
+      font-size: 14px;
+
+      a {
+        color: $gray;
+
+        i.fa-share {
+          margin-right: 3px;
+          margin-left: 2px;
+        }
+      }
+    }
+  }
+}
