@@ -62,15 +62,15 @@ header {
 }
 
 @-webkit-keyframes bounce {
- 30% { transform: translateY(20px); }
+ 30% { -webkit-transform: translateY(20px); }
 }
 
 @-moz-keyframes bounce {
- 30% { transform: translateY(20px); }
+ 30% { -moz-transform: translateY(20px); }
 }
 
 @-o-keyframes bounce {
- 30% { transform: translateY(20px); }
+ 30% { -o-transform: translateY(20px); }
 }
 
 @keyframes bounce {
