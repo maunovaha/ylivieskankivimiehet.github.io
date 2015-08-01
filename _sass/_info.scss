@@ -1,6 +1,11 @@
 section.info {
   .section-description {
     max-width: 980px;
+
+    p {
+      text-align: left; 
+      font-size: 20px;
+    }
   }
 
   .pure-g {

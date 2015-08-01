@@ -40,9 +40,10 @@ layout: default
   <section class="info">
     <div class="ruler-heavy" id="scroll-to-info"></div>
     <div class="section-description">
-      <h1>Ketä olemme</h1>
+      <h1>Jos vastasit "sopii", niin..</h1>
       <p>
-        Lorem ipsum dolor sit amet, tale disputando suscipiantur quo et, dicat gubergren mnesarchum qui ea. Pri autem summo phaedrum in. Tale disputando suscipiantur quo et, dicat gubergren ciber supar. Lorem ipsum dolor sit amet, tale disputando.
+        ..saavuit oikeaan osoitteeseen! Ylivieskan Kivimiehet on vuonna 2010 perustettu yritys, joka on erikoistunut pihakiveyksiin ym. alan töihin. Yrittäjänä toimii Petri Vähä, jolla on vankka kokemus toimivien pihojen rakentamisesta. Tyypilliset asiakkaat koostuvat yksityishenkilöistä, ja heihin on 
+        tarkoitus panostaa jatkossakin. Kysymys kuuluukin, millainen tarve teillä olisi?
       </p>
     </div>
     <div class="ruler-light"></div>
@@ -84,7 +85,7 @@ layout: default
               <i class="fa fa-search-plus"></i>
             </div>
           </div>
-          <img src="../assets/images/kuva_1.png" id="img-4" class="pure-img" alt="Pihalaatoitus kuva 4" />
+          <img src="../assets/images/kuva_5.png" id="img-4" class="pure-img" alt="Pihalaatoitus kuva 4" />
         </a>
       </div>
     </div>
@@ -99,12 +100,15 @@ layout: default
         Kiinnostuitko? Hyvä! Ota yhteyttä täyttämällä oheinen lomake, tai soita 044 043 0460.
       </p>
     </div>
-    <form action="http://localhost/random" class="pure-g" method="post" novalidate>
+    <form action="#" class="pure-g" method="post" novalidate>
       <input type="text" placeholder="Nimesi" id="name" class="pure-u-1" maxlength="255" />
       <input type="tel" placeholder="Puhelinnumero" id="phone" class="pure-u-1" maxlength="255" />
       <input type="email" placeholder="Sähköposti" id="email" class="pure-u-1" maxlength="255" />
-      <textarea placeholder="Viesti" class="pure-u-1" maxlength="5000"></textarea>
-      <a href="#" class="pure-u-1"><i class="fa fa-paper-plane"></i>Lähetä viesti</a>
+      <textarea placeholder="Viesti" id="message" class="pure-u-1" maxlength="5000"></textarea>
+      <div class="pure-u-1 state success hidden"><p>Viesti lähetetty, kiitos!</p></div>
+      <div class="pure-u-1 state error validation-error hidden"><p>Viestin lähetys epäonnistui. Täytithän kaikki kentät?</p></div>
+      <div class="pure-u-1 state error server-error hidden"><p>Tapahtui odottamaton virhe, jos mahdollista, lähetä sähköpostia suoraan ylivieskankivimiehet[at]gmail.com tai soita 044 043 0460.</p></div>
+      <a href="#" id="send-feedback" class="pure-u-1">Lähetä viesti</a>
     </form>
   </section>
 </main>
@@ -130,11 +134,16 @@ layout: default
       <div class="pure-u-1">
         <figure>
           <img src="../assets/images/kuva_4.png" class="pure-img" id="overlay-img" alt="Pihalaatoitus kuva" />
+          <!--
           <figcaption>
             Lorem ipsum dolor sit amet, tale disputando suscipiantur quo et, dicat gubergren mnesarchum qui ea. Pri autem summo phaedrum in.
           </figcaption>
+          -->
         </figure>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Feedback spinner -->
+<div id="feedback-overlay"></div>
