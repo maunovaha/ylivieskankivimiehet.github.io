@@ -1,1 +1,0 @@
-> Copyright (c) 2015 and beyond, Ylivieskan Kivimiehet. All rights reserved.
