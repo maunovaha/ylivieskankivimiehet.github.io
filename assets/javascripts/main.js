@@ -16,6 +16,10 @@ ImageOverlay.prototype = {
   init: function() {
     var self = this;
 
+    // Silly test for mobile
+    this.isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase());
+    this.showDelay = this.isMobile ? 650 : 0;
+
     // Handle to overlay etc.
     this.$overlay    = $('.overlay');
     this.$overlayImg = $('#overlay-img');
@@ -37,9 +41,6 @@ ImageOverlay.prototype = {
   open: function(e, that) {
     e.preventDefault();
 
-    // Disables scrollbars from body while image is open
-    $('body').addClass('overflow-hidden');
-
     var self = this;
 
     // Handle to proper image element & url of it
@@ -49,8 +50,11 @@ ImageOverlay.prototype = {
     // Swaps overlay to display proper image
     self.$overlayImg.attr('src', imgUrl);
 
-    // Shows it all
-    self.$overlay.addClass('overlay-open'); 
+    setTimeout(function() { 
+      // Disables scrollbars from body while image is open
+      $('body').addClass('overflow-hidden');
+      self.$overlay.addClass('overlay-open'); 
+    }, self.showDelay);
   },
 
   /**

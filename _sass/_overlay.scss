@@ -33,7 +33,8 @@
   
   .overlay-content {
     position: relative;
-    padding: 100px $content-padding;
+    padding-top: 100px;
+    padding-bottom: 100px;
     min-height: 100%;
     text-align: center;
     background-color: #FFFFFF;
@@ -90,4 +91,14 @@
   -moz-transform: scale(1); 
   -o-transform: scale(1);  
   transform: scale(1);
+}
+
+/* Media queries */
+
+/* Custom */
+@media screen and (min-width: 35.5em) {
+  .overlay .overlay-content {
+    padding-left: $content-padding;
+    padding-right: $content-padding;
+  }
 }
